@@ -1,0 +1,13 @@
+AES first-round stage test (AVR assembly).
+Send 'S' for one new plaintext. Reset repeats the initial sequence.
+
+=== AES-128 Round 1: one plaintext ===
+Plaintext                : 7A AF A0 EA D3 62 98 38 78 4C BE DF 42 67 0B FC
+Key (Round 0)            : 2B 7E 15 16 28 AE D2 A6 AB F7 15 88 09 CF 4F 3C
+Key (Round 1)            : A0 FA FE 17 88 54 2C B1 23 A3 39 39 2A 6C 76 05
+Initial AddRoundKey (R0) : 51 D1 B5 FC FB CC 4A 9E D3 BB AB 57 4B A8 44 C0
+SubBytes (R1)            : D1 3E D5 B0 0F 4B D6 0B 66 EA 62 5B B3 C2 1B BA
+ShiftRows (R1)           : D1 4B 62 BA 0F EA 1B B0 66 C2 D5 0B B3 3E D6 5B
+MixColumns (R1)          : BC 5B 8B 2E 90 5D 18 9B 4F 96 08 AB B2 F5 D7 90
+AddRoundKey (R1)         : 1C A1 75 39 18 09 34 2A 6C 35 31 92 98 99 A1 95
+Done. Send 'S' for a new plaintext.
